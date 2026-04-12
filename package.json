@@ -1,0 +1,24 @@
+{
+  "name": "witfans-landing",
+  "version": "1.0.0",
+  "description": "High-end landing page for witfans",
+  "main": "index.html",
+  "scripts": {
+    "start": "npx serve ."
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/waris2615/onlyfan.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "commonjs",
+  "bugs": {
+    "url": "https://github.com/waris2615/onlyfan/issues"
+  },
+  "homepage": "https://github.com/waris2615/onlyfan#readme",
+  "dependencies": {
+    "playwright": "^1.59.1"
+  }
+}

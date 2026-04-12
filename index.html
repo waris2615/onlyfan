@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>witfans | The Official Private Gallery</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        dark: '#050505',
+                        darker: '#000000',
+                        accent: '#ffffff',
+                        subtle: '#222222'
+                    },
+                    fontFamily: {
+                        sans: ['Inter', 'sans-serif'],
+                        display: ['Montserrat', 'sans-serif'],
+                    }
+                }
+            }
+        }
+    </script>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body class="bg-darker text-white antialiased selection:bg-white selection:text-black">
+
+    <!-- Sticky Header -->
+    <header class="fixed top-0 w-full z-50 bg-darker/90 backdrop-blur-md border-b border-subtle transition-all duration-300">
+        <div class="max-w-7xl mx-auto px-6 h-20 flex items-center justify-between">
+            <a href="#" class="font-display font-black text-2xl tracking-widest uppercase">witfans</a>
+            <a href="#link-hub" class="sharp-btn border border-white px-6 py-3 text-sm hover:bg-white hover:text-black transition-colors duration-300">Subscribe</a>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="relative min-h-screen flex items-center justify-center pt-20 px-6 overflow-hidden">
+        <!-- Background Image (Optional subtle usage or just dark) -->
+        <div class="absolute inset-0 z-0 opacity-20">
+            <img src="assets/images/IMG_8809.jpeg" alt="Background" class="w-full h-full object-cover object-center filter grayscale">
+            <div class="absolute inset-0 bg-gradient-to-b from-darker via-transparent to-darker"></div>
+        </div>
+
+        <div class="relative z-10 max-w-4xl mx-auto text-center animate-fade-in-up">
+            <h1 class="font-display font-black text-5xl md:text-7xl lg:text-8xl leading-tight mb-6 uppercase tracking-tighter">
+                The Official<br>Private Gallery<br>of <span class="text-transparent border-text">witfans</span>
+            </h1>
+            <p class="font-sans font-light text-lg md:text-xl text-gray-400 max-w-2xl mx-auto mb-12 leading-relaxed">
+                Exclusive access to the content too hot for social media. Join the inner circle for daily updates and 1-on-1 interaction.
+            </p>
+            <a href="#link-hub" class="sharp-btn inline-block bg-white text-black border border-white px-10 py-5 text-lg hover:bg-transparent hover:text-white transition-all duration-300 transform hover:scale-105">
+                Unlock Access Now
+            </a>
+        </div>
+    </section>
+
+    <!-- Link Hub Section -->
+    <section id="link-hub" class="py-24 px-6 bg-dark">
+        <div class="max-w-3xl mx-auto">
+            <div class="space-y-6 reveal">
+                <a href="#" class="block w-full sharp-btn border border-subtle bg-darker text-white text-center py-6 text-xl hover:border-white hover:bg-white hover:text-black">
+                    Main OnlyFans
+                </a>
+                <a href="#" class="block w-full sharp-btn border border-subtle bg-darker text-white text-center py-6 text-xl hover:border-white hover:bg-white hover:text-black">
+                    Free Teaser Page
+                </a>
+                <a href="#" class="block w-full sharp-btn border border-subtle bg-darker text-white text-center py-6 text-xl hover:border-white hover:bg-white hover:text-black">
+                    VIP Telegram
+                </a>
+                <a href="#" class="block w-full sharp-btn border border-subtle bg-darker text-white text-center py-6 text-xl hover:border-white hover:bg-white hover:text-black">
+                    Gift Wishlist
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Value Props Section -->
+    <section class="py-24 px-6 bg-darker border-t border-b border-subtle">
+        <div class="max-w-7xl mx-auto">
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-12">
+                <div class="border-l-2 border-white pl-6 reveal">
+                    <h3 class="font-display font-bold text-2xl mb-4">Daily HD Content</h3>
+                    <p class="font-sans font-light text-gray-400 leading-relaxed">Experience a constant stream of high-definition, exclusive media updated daily. Never miss a moment.</p>
+                </div>
+                <div class="border-l-2 border-white pl-6 reveal" style="transition-delay: 100ms;">
+                    <h3 class="font-display font-bold text-2xl mb-4">Personal DMs (No Agencies)</h3>
+                    <p class="font-sans font-light text-gray-400 leading-relaxed">Direct, one-on-one connection. I answer every message personally. No bots, no agencies, just me.</p>
+                </div>
+                <div class="border-l-2 border-white pl-6 reveal" style="transition-delay: 200ms;">
+                    <h3 class="font-display font-bold text-2xl mb-4">Custom Content Requests</h3>
+                    <p class="font-sans font-light text-gray-400 leading-relaxed">Your fantasies brought to life. Request personalized photos and videos tailored specifically to your desires.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Teaser Gallery -->
+    <section class="py-32 px-6 bg-dark">
+        <div class="max-w-7xl mx-auto">
+            <h2 class="font-display font-black text-4xl md:text-5xl mb-16 text-center tracking-tight reveal">A Glimpse Inside</h2>
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+                <!-- Grid Items using the 4 provided images and repeating some to fill 3x3 -->
+                <div class="relative group aspect-[4/5] overflow-hidden sharp-border reveal">
+                    <img src="assets/images/IMG_8804.jpeg" alt="Teaser 1" class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110 blur-sm brightness-50">
+                    <div class="absolute inset-0 flex flex-col items-center justify-center bg-black/40 opacity-100 transition-opacity duration-300">
+                        <svg class="w-12 h-12 mb-4 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="square" stroke-linejoin="miter" stroke-width="1.5" d="M12 15v2m-6 4h12a2 2 0 002-2v-6a2 2 0 00-2-2H6a2 2 0 00-2 2v6a2 2 0 002 2zm10-10V7a4 4 0 00-8 0v4h8z"></path></svg>
+                        <span class="font-display font-bold uppercase tracking-widest text-sm">Locked</span>
+                    </div>
+                </div>
+                <div class="relative group aspect-[4/5] overflow-hidden sharp-border reveal" style="transition-delay: 100ms;">
+                    <img src="assets/images/IMG_8805.jpeg" alt="Teaser 2" class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110 blur-sm brightness-50">
+                    <div class="absolute inset-0 flex flex-col items-center justify-center bg-black/40 opacity-100 transition-opacity duration-300">
+                        <svg class="w-12 h-12 mb-4 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="square" stroke-linejoin="miter" stroke-width="1.5" d="M12 15v2m-6 4h12a2 2 0 002-2v-6a2 2 0 00-2-2H6a2 2 0 00-2 2v6a2 2 0 002 2zm10-10V7a4 4 0 00-8 0v4h8z"></path></svg>
+                        <span class="font-display font-bold uppercase tracking-widest text-sm">Locked</span>
+                    </div>
+                </div>
+                <div class="relative group aspect-[4/5] overflow-hidden sharp-border reveal" style="transition-delay: 200ms;">
+                    <img src="assets/images/IMG_8806.jpeg" alt="Teaser 3" class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110 blur-sm brightness-50">
+                    <div class="absolute inset-0 flex flex-col items-center justify-center bg-black/40 opacity-100 transition-opacity duration-300">
+                        <svg class="w-12 h-12 mb-4 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="square" stroke-linejoin="miter" stroke-width="1.5" d="M12 15v2m-6 4h12a2 2 0 002-2v-6a2 2 0 00-2-2H6a2 2 0 00-2 2v6a2 2 0 002 2zm10-10V7a4 4 0 00-8 0v4h8z"></path></svg>
+                        <span class="font-display font-bold uppercase tracking-widest text-sm">Locked</span>
+                    </div>
+                </div>
+                <div class="relative group aspect-[4/5] overflow-hidden sharp-border reveal">
+                    <img src="assets/images/IMG_8809.jpeg" alt="Teaser 4" class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110 blur-sm brightness-50">
+                    <div class="absolute inset-0 flex flex-col items-center justify-center bg-black/40 opacity-100 transition-opacity duration-300">
+                        <svg class="w-12 h-12 mb-4 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="square" stroke-linejoin="miter" stroke-width="1.5" d="M12 15v2m-6 4h12a2 2 0 002-2v-6a2 2 0 00-2-2H6a2 2 0 00-2 2v6a2 2 0 002 2zm10-10V7a4 4 0 00-8 0v4h8z"></path></svg>
+                        <span class="font-display font-bold uppercase tracking-widest text-sm">Locked</span>
+                    </div>
+                </div>
+                <div class="relative group aspect-[4/5] overflow-hidden sharp-border reveal" style="transition-delay: 100ms;">
+                    <img src="assets/images/IMG_8804.jpeg" alt="Teaser 5" class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110 blur-sm brightness-50">
+                    <div class="absolute inset-0 flex flex-col items-center justify-center bg-black/40 opacity-100 transition-opacity duration-300">
+                        <svg class="w-12 h-12 mb-4 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="square" stroke-linejoin="miter" stroke-width="1.5" d="M12 15v2m-6 4h12a2 2 0 002-2v-6a2 2 0 00-2-2H6a2 2 0 00-2 2v6a2 2 0 002 2zm10-10V7a4 4 0 00-8 0v4h8z"></path></svg>
+                        <span class="font-display font-bold uppercase tracking-widest text-sm">Locked</span>
+                    </div>
+                </div>
+                <div class="relative group aspect-[4/5] overflow-hidden sharp-border reveal" style="transition-delay: 200ms;">
+                    <img src="assets/images/IMG_8805.jpeg" alt="Teaser 6" class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110 blur-sm brightness-50">
+                    <div class="absolute inset-0 flex flex-col items-center justify-center bg-black/40 opacity-100 transition-opacity duration-300">
+                        <svg class="w-12 h-12 mb-4 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="square" stroke-linejoin="miter" stroke-width="1.5" d="M12 15v2m-6 4h12a2 2 0 002-2v-6a2 2 0 00-2-2H6a2 2 0 00-2 2v6a2 2 0 002 2zm10-10V7a4 4 0 00-8 0v4h8z"></path></svg>
+                        <span class="font-display font-bold uppercase tracking-widest text-sm">Locked</span>
+                    </div>
+                </div>
+                <div class="relative group aspect-[4/5] overflow-hidden sharp-border reveal">
+                    <img src="assets/images/IMG_8806.jpeg" alt="Teaser 7" class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110 blur-sm brightness-50">
+                    <div class="absolute inset-0 flex flex-col items-center justify-center bg-black/40 opacity-100 transition-opacity duration-300">
+                        <svg class="w-12 h-12 mb-4 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="square" stroke-linejoin="miter" stroke-width="1.5" d="M12 15v2m-6 4h12a2 2 0 002-2v-6a2 2 0 00-2-2H6a2 2 0 00-2 2v6a2 2 0 002 2zm10-10V7a4 4 0 00-8 0v4h8z"></path></svg>
+                        <span class="font-display font-bold uppercase tracking-widest text-sm">Locked</span>
+                    </div>
+                </div>
+                <div class="relative group aspect-[4/5] overflow-hidden sharp-border reveal" style="transition-delay: 100ms;">
+                    <img src="assets/images/IMG_8809.jpeg" alt="Teaser 8" class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110 blur-sm brightness-50">
+                    <div class="absolute inset-0 flex flex-col items-center justify-center bg-black/40 opacity-100 transition-opacity duration-300">
+                        <svg class="w-12 h-12 mb-4 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="square" stroke-linejoin="miter" stroke-width="1.5" d="M12 15v2m-6 4h12a2 2 0 002-2v-6a2 2 0 00-2-2H6a2 2 0 00-2 2v6a2 2 0 002 2zm10-10V7a4 4 0 00-8 0v4h8z"></path></svg>
+                        <span class="font-display font-bold uppercase tracking-widest text-sm">Locked</span>
+                    </div>
+                </div>
+                <div class="relative group aspect-[4/5] flex items-center justify-center bg-darker sharp-border reveal" style="transition-delay: 200ms;">
+                    <a href="#link-hub" class="flex flex-col items-center justify-center w-full h-full hover:bg-white hover:text-black transition-colors duration-300 text-white">
+                        <span class="font-display font-black text-2xl uppercase tracking-widest mb-2">View All</span>
+                        <span class="font-sans text-sm font-light">Unlock 500+ items</span>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Legal & Safety Footer -->
+    <footer class="py-12 px-6 bg-black border-t border-subtle">
+        <div class="max-w-7xl mx-auto text-center space-y-4">
+            <div class="inline-flex items-center justify-center border border-white px-4 py-1 mb-4">
+                <span class="font-display font-bold text-sm tracking-widest">18+ RESTRICTED</span>
+            </div>
+            <p class="font-sans text-xs text-gray-500 leading-relaxed max-w-3xl mx-auto">
+                By entering this site you swear that you are of legal age in your area to view adult material and that you wish to view such material.
+            </p>
+            <p class="font-sans text-xs text-gray-500 leading-relaxed max-w-3xl mx-auto">
+                DMCA Protection & Copyright Notice: All content published on this page and associated links is exclusive copyrighted material belonging to witfans. Unauthorized redistribution, copying, or sharing of this content (including screenshots and screen recordings) will result in immediate legal action against the responsible party.
+            </p>
+            <p class="font-display text-xs text-gray-700 tracking-widest pt-8 uppercase">&copy; 2024 witfans. All rights reserved.</p>
+        </div>
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>

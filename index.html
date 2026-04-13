@@ -25,14 +25,18 @@
     </script>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Playfair+Display:wght@400;500;600;700;800;900&display=swap" rel="stylesheet" />
     <style>
-      body { font-family: 'Inter', sans-serif; }
+      body { font-family: 'Inter', sans-serif; margin: 0; }
       .font-display { font-family: 'Playfair Display', serif; }
       
-      /* Hero Slideshow */
-      .slide { position: fixed; inset: 0; opacity: 0; transition: opacity 1s ease; }
+      /* Fixed background slideshow */
+      .slideshow-container { position: fixed; top: 0; left: 0; right: 0; bottom: 0; z-index: 0; }
+      .slide { position: absolute; inset: 0; opacity: 0; transition: opacity 1s ease; }
       .slide.active { opacity: 1; }
       .slide img { width: 100%; height: 100%; object-fit: cover; }
-      .slide-overlay { position: fixed; inset: 0; background: linear-gradient(0deg, #000 0%, rgba(0,0,0,0.4) 50%, rgba(0,0,0,0.2) 100%); }
+      .slide-overlay { position: absolute; inset: 0; background: linear-gradient(0deg, #000000 0%, rgba(0,0,0,0.7) 50%, rgba(0,0,0,0.5) 100%); }
+      
+      /* Content on top */
+      .content-overlay { position: relative; z-index: 10; }
       
       /* Smooth scrolling */
       html { scroll-behavior: smooth; }
@@ -56,15 +60,17 @@
     </style>
     <link rel="stylesheet" href="style.css" />
   </head>
-  <body class="bg-darker text-white">
-    <!-- Hero Slideshow -->
-    <div id="slideshow" class="fixed inset-0 z-0">
+  <body class="bg-black text-white">
+    <!-- Fixed Background Slideshow -->
+    <div class="slideshow-container">
       <div class="slide active"><img src="assets/images/IMG_8809.jpeg" alt="Slide 1" /><div class="slide-overlay"></div></div>
       <div class="slide"><img src="assets/images/IMG_8804.jpeg" alt="Slide 2" /><div class="slide-overlay"></div></div>
       <div class="slide"><img src="assets/images/IMG_8805.jpeg" alt="Slide 3" /><div class="slide-overlay"></div></div>
       <div class="slide"><img src="assets/images/IMG_8806.jpeg" alt="Slide 4" /><div class="slide-overlay"></div></div>
     </div>
 
+    <!-- Content -->
+    <div class="content-overlay">
     <!-- Navigation -->
     <nav class="fixed top-0 w-full z-50 nav-blur border-b border-white/10">
       <div class="max-w-7xl mx-auto px-4 md:px-8 py-4 flex items-center justify-between">
@@ -97,7 +103,7 @@
 
     <!-- Hero Section -->
     <section class="relative min-h-screen flex items-center justify-center pt-20">
-      <div class="relative z-10 max-w-4xl mx-auto text-center px-4">
+      <div class="relative z-10 max-w-4xl mx-auto text-center px-4 content-wrapper">
         <p class="text-accent text-sm font-medium tracking-widest uppercase mb-4">Exclusive Content</p>
         <h1 class="font-display font-black text-5xl md:text-7xl lg:text-8xl mb-6 leading-tight">
           The Private<br /><span class="text-accent">Gallery</span>
@@ -231,5 +237,6 @@
         setSlide((currentSlide + 1) % slides.length);
       }, 5000);
     </script>
+    </div>
   </body>
 </html>

@@ -1,0 +1,94 @@
+<!doctype html>
+<html lang="en" class="scroll-smooth">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>About | witfans</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            colors: { dark: "#050505", darker: "#000000", subtle: "#222222" },
+            fontFamily: { sans: ["Inter", "sans-serif"], display: ["Montserrat", "sans-serif"] },
+          },
+        },
+      };
+    </script>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body class="bg-darker text-white antialiased">
+    <header class="fixed top-0 w-full z-50 bg-darker/90 backdrop-blur-md border-b border-subtle">
+      <div class="max-w-7xl mx-auto px-4 md:px-6 h-16 md:h-20 flex items-center justify-between">
+        <a href="index.html" class="font-display font-black text-xl md:text-2xl tracking-widest uppercase">witfans</a>
+        <nav class="hidden md:flex items-center space-x-6">
+          <a href="index.html" class="text-gray-400 hover:text-white text-sm">Home</a>
+          <a href="gallery.html" class="text-gray-400 hover:text-white text-sm">Gallery</a>
+          <a href="pricing.html" class="text-gray-400 hover:text-white text-sm">Pricing</a>
+          <a href="about.html" class="text-white text-sm">About</a>
+          <a href="contact.html" class="text-gray-400 hover:text-white text-sm">Contact</a>
+        </nav>
+        <button class="md:hidden p-2" onclick="document.getElementById('mobile-menu').classList.toggle('hidden')">
+          <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"/></svg>
+        </button>
+      </div>
+      <div id="mobile-menu" class="hidden md:hidden bg-darker border-t border-subtle px-4 py-4 space-y-3">
+        <a href="index.html" class="block text-gray-400">Home</a>
+        <a href="gallery.html" class="block text-gray-400">Gallery</a>
+        <a href="pricing.html" class="block text-gray-400">Pricing</a>
+        <a href="about.html" class="block text-white">About</a>
+        <a href="contact.html" class="block text-gray-400">Contact</a>
+      </div>
+    </header>
+
+    <section class="pt-28 md:pt-32 pb-12 px-4 bg-darker text-center">
+      <h1 class="font-display font-black text-4xl md:text-5xl mb-4">About Me</h1>
+    </section>
+
+    <section class="py-12 md:py-16 px-4 bg-dark">
+      <div class="max-w-4xl mx-auto">
+        <div class="grid md:grid-cols-2 gap-8 items-center">
+          <div class="aspect-[4/5] overflow-hidden">
+            <img src="assets/images/IMG_8809.jpeg" alt="About" class="w-full h-full object-cover" />
+          </div>
+          <div>
+            <h2 class="font-display font-bold text-2xl md:text-3xl mb-4">Hey, I'm witfans</h2>
+            <p class="text-gray-400 mb-4">Creating exclusive content for over 2 years. I love connecting with fans and bringing fantasies to life.</p>
+            <p class="text-gray-400 mb-4">My mission is to provide the most personal and exclusive experience possible. No agencies, just me and you.</p>
+            <div class="space-y-2 mt-6">
+              <p class="text-gray-300"><strong>Location:</strong> Private</p>
+              <p class="text-gray-300"><strong>Content:</strong> Daily updates</p>
+              <p class="text-gray-300"><strong>Response:</strong> Within 24 hours</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="py-16 px-4 bg-darker border-t border-subtle">
+      <div class="max-w-7xl mx-auto text-center">
+        <h2 class="font-display font-bold text-2xl md:text-3xl mb-8">Stats</h2>
+        <div class="grid grid-cols-3 gap-6 md:gap-12">
+          <div>
+            <div class="text-3xl md:text-4xl font-black mb-2">2+</div>
+            <div class="text-gray-400 text-sm">Years Creating</div>
+          </div>
+          <div>
+            <div class="text-3xl md:text-4xl font-black mb-2">10K+</div>
+            <div class="text-gray-400 text-sm">Subscribers</div>
+          </div>
+          <div>
+            <div class="text-3xl md:text-4xl font-black mb-2">500+</div>
+            <div class="text-gray-400 text-sm">Content Posts</div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <footer class="py-12 px-4 bg-darker border-t border-subtle">
+      <div class="max-w-7xl mx-auto text-center">
+        <p class="text-gray-500 text-sm">&copy; 2026 witfans. All rights reserved.</p>
+      </div>
+    </footer>
+  </body>
+</html>

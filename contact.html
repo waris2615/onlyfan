@@ -1,0 +1,82 @@
+<!doctype html>
+<html lang="en" class="scroll-smooth">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Contact | witfans</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            colors: { dark: "#050505", darker: "#000000", subtle: "#222222" },
+            fontFamily: { sans: ["Inter", "sans-serif"], display: ["Montserrat", "sans-serif"] },
+          },
+        },
+      };
+    </script>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body class="bg-darker text-white antialiased">
+    <header class="fixed top-0 w-full z-50 bg-darker/90 backdrop-blur-md border-b border-subtle">
+      <div class="max-w-7xl mx-auto px-4 md:px-6 h-16 md:h-20 flex items-center justify-between">
+        <a href="index.html" class="font-display font-black text-xl md:text-2xl tracking-widest uppercase">witfans</a>
+        <nav class="hidden md:flex items-center space-x-6">
+          <a href="index.html" class="text-gray-400 hover:text-white text-sm">Home</a>
+          <a href="gallery.html" class="text-gray-400 hover:text-white text-sm">Gallery</a>
+          <a href="pricing.html" class="text-gray-400 hover:text-white text-sm">Pricing</a>
+          <a href="about.html" class="text-gray-400 hover:text-white text-sm">About</a>
+          <a href="contact.html" class="text-white text-sm">Contact</a>
+        </nav>
+        <button class="md:hidden p-2" onclick="document.getElementById('mobile-menu').classList.toggle('hidden')">
+          <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"/></svg>
+        </button>
+      </div>
+      <div id="mobile-menu" class="hidden md:hidden bg-darker border-t border-subtle px-4 py-4 space-y-3">
+        <a href="index.html" class="block text-gray-400">Home</a>
+        <a href="gallery.html" class="block text-gray-400">Gallery</a>
+        <a href="pricing.html" class="block text-gray-400">Pricing</a>
+        <a href="about.html" class="block text-gray-400">About</a>
+        <a href="contact.html" class="block text-white">Contact</a>
+      </div>
+    </header>
+
+    <section class="pt-28 md:pt-32 pb-12 px-4 bg-darker text-center">
+      <h1 class="font-display font-black text-4xl md:text-5xl mb-4">Get In Touch</h1>
+      <p class="text-gray-400">Have questions? Send me a message!</p>
+    </section>
+
+    <section class="py-12 md:py-16 px-4 bg-dark">
+      <div class="max-w-xl mx-auto">
+        <form class="space-y-6" onsubmit="event.preventDefault(); alert('Thanks! DM on OnlyFans for fastest response.');">
+          <div>
+            <input type="text" placeholder="Your Name" class="w-full bg-darker border border-subtle text-white px-4 py-4 focus:border-white outline-none" required />
+          </div>
+          <div>
+            <input type="email" placeholder="Your Email" class="w-full bg-darker border border-subtle text-white px-4 py-4 focus:border-white outline-none" required />
+          </div>
+          <div>
+            <textarea placeholder="Your Message" rows="5" class="w-full bg-darker border border-subtle text-white px-4 py-4 focus:border-white outline-none resize-none" required></textarea>
+          </div>
+          <button type="submit" class="w-full bg-white text-black py-4 text-lg font-bold hover:bg-gray-200 transition-colors">Send Message</button>
+        </form>
+      </div>
+    </section>
+
+    <section class="py-12 px-4 bg-darker border-t border-subtle">
+      <div class="max-w-3xl mx-auto text-center">
+        <h2 class="font-bold text-xl mb-4">Other Ways to Reach Me</h2>
+        <div class="space-y-4">
+          <a href="#" class="block py-4 border border-subtle hover:border-white transition-colors">OnlyFans DM</a>
+          <a href="#" class="block py-4 border border-subtle hover:border-white transition-colors">VIP Telegram</a>
+        </div>
+      </div>
+    </section>
+
+    <footer class="py-12 px-4 bg-darker border-t border-subtle">
+      <div class="max-w-7xl mx-auto text-center">
+        <p class="text-gray-500 text-sm">&copy; 2026 witfans. All rights reserved.</p>
+      </div>
+    </footer>
+  </body>
+</html>

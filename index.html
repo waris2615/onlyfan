@@ -72,25 +72,61 @@
       }
     </script>
 
-    <!-- Hero Section -->
-    <section class="relative min-h-screen flex items-center justify-center pt-16 md:pt-20 px-4 md:px-6 overflow-hidden">
-      <div class="absolute inset-0 z-0 opacity-20">
-        <img src="assets/images/IMG_8809.jpeg" alt="Background" class="w-full h-full object-cover object-center filter grayscale" />
+    <!-- Hero Slideshow -->
+    <section class="relative min-h-screen flex items-center justify-center pt-16 md:pt-20 overflow-hidden">
+      <div class="absolute inset-0 z-0">
+        <div id="slideshow" class="w-full h-full">
+          <img src="assets/images/IMG_8809.jpeg" alt="Slide 1" class="w-full h-full object-cover fixed inset-0 opacity-20" />
+        </div>
         <div class="absolute inset-0 bg-gradient-to-b from-darker via-transparent to-darker"></div>
       </div>
 
-      <div class="relative z-10 max-w-4xl mx-auto text-center animate-fade-in-up">
+      <div class="relative z-10 max-w-4xl mx-auto text-center px-4 animate-fade-in-up">
         <h1 class="font-display font-black text-4xl md:text-6xl lg:text-8xl leading-tight mb-4 md:mb-6 uppercase tracking-tighter">
           The Official<br />Private Gallery<br />of <span class="text-transparent border-text">witfans</span>
         </h1>
-        <p class="font-sans font-light text-base md:text-lg lg:text-xl text-gray-400 max-w-2xl mx-auto mb-8 md:mb-12 leading-relaxed px-4">
+        <p class="font-sans font-light text-base md:text-lg lg:text-xl text-gray-400 max-w-2xl mx-auto mb-8 md:mb-12 leading-relaxed">
           Exclusive access to the content too hot for social media. Join the inner circle for daily updates and 1-on-1 interaction.
         </p>
         <a href="#link-hub" class="sharp-btn inline-block bg-white text-black border border-white px-8 md:px-10 py-4 md:py-5 text-base md:text-lg hover:bg-transparent hover:text-white transition-all duration-300 transform hover:scale-105">
           Unlock Access Now
         </a>
       </div>
+
+      <!-- Slideshow Controls -->
+      <div class="absolute bottom-8 left-0 right-0 z-20 flex justify-center gap-2">
+        <button onclick="changeSlide(0)" class="slide-dot w-3 h-3 rounded-full bg-white/50 hover:bg-white transition"></button>
+        <button onclick="changeSlide(1)" class="slide-dot w-3 h-3 rounded-full bg-white/50 hover:bg-white transition"></button>
+        <button onclick="changeSlide(2)" class="slide-dot w-3 h-3 rounded-full bg-white/50 hover:bg-white transition"></button>
+        <button onclick="changeSlide(3)" class="slide-dot w-3 h-3 rounded-full bg-white/50 hover:bg-white transition"></button>
+      </div>
     </section>
+
+    <script>
+      const slides = ['IMG_8809.jpeg', 'IMG_8804.jpeg', 'IMG_8805.jpeg', 'IMG_8806.jpeg'];
+      let currentSlide = 0;
+      
+      function changeSlide(index) {
+        currentSlide = index;
+        updateSlide();
+      }
+      
+      function updateSlide() {
+        const slideshow = document.getElementById('slideshow');
+        slideshow.innerHTML = '<img src="assets/images/' + slides[currentSlide] + '" alt="Slide" class="w-full h-full object-cover fixed inset-0 opacity-20 transition-opacity duration-1000" />';
+        
+        document.querySelectorAll('.slide-dot').forEach((dot, i) => {
+          dot.classList.toggle('bg-white', i === currentSlide);
+          dot.classList.toggle('bg-white/50', i !== currentSlide);
+        });
+      }
+      
+      // Auto-rotate every 5 seconds
+      setInterval(() => {
+        currentSlide = (currentSlide + 1) % slides.length;
+        updateSlide();
+      }, 5000);
+    </script>
 
     <!-- Link Hub Section -->
     <section id="link-hub" class="py-16 md:py-24 px-4 md:px-6 bg-dark">
